@@ -26,8 +26,8 @@ function Header() {
             <li className="has-children">
               <Link to="/properties">Properties</Link>
               <ul className="dropdown">
-                <li><a href="#">Buy Property</a></li>
-                <li><a href="#">Rent Property</a></li>
+                <li><Link to="/Buyproperty">Buy Property</Link></li>
+                <li><Link to="/Rentproperty">Rent Property</Link></li>
                 {/* <li className="has-children">
                   <a href="#">Catagory</a>
                   <ul className="dropdown">
@@ -38,7 +38,7 @@ function Header() {
                 </li> */}
               </ul>
             </li>
-            <li><a href="services.html">Services</a></li>
+            <li><Link to="/Services">Services</Link></li>
             <li><a href="about.html">About</a></li>
             <li><a href="contact.html">Contact Us</a></li>
           </ul>

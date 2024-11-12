@@ -343,6 +343,136 @@ function Dashboard() {
     </div>
   </div>
 
+  <div className="section sec-testimonials">
+      <div className="container">
+        <div className="row mb-5 align-items-center">
+          <div className="col-md-6">
+            <h2 className="font-weight-bold heading text-primary mb-4 mb-md-0">
+              Customer Says
+            </h2>
+          </div>
+          <div className="col-md-6 text-md-end">
+            <div id="testimonial-nav">
+              <span className="prev" data-controls="prev">Prev</span>
+
+              <span className="next" data-controls="next">Next</span>
+            </div>
+          </div>
+        </div>
+    </div>
+        <div className="d-flex flex-row">
+         
+            <div className="item">
+              <div className="testimonial">
+                <img
+                  src="assets/images/person_1-min.jpg"
+                  alt="Image"
+                  className="img-fluid rounded-circle w-25 mb-4"
+                />
+                <div className="rate">
+                  <span className="icon-star text-warning"></span>
+                  <span className="icon-star text-warning"></span>
+                  <span className="icon-star text-warning"></span>
+                  <span className="icon-star text-warning"></span>
+                  <span className="icon-star text-warning"></span>
+                </div>
+                <h3 className="h5 text-primary mb-4">James Smith</h3>
+                <blockquote>
+                  <p>
+                    &ldquo;Far far away, behind the word mountains, far from the
+                    countries Vokalia and Consonantia, there live the blind
+                    texts. Separated they live Bookmarksgrove right at the
+                    coast of the Semantics.&rdquo;
+                  </p>
+                </blockquote>
+                <p className="text-black-50">Designer, Co-founder</p>
+              </div>
+            </div>
+
+            <div className="item">
+              <div className="testimonial">
+                <img
+                  src="assets/images/person_2-min.jpg"
+                  alt="Image"
+                  className="img-fluid rounded-circle w-25 mb-4"
+                />
+                <div className="rate">
+                  <span className="icon-star text-warning"></span>
+                  <span className="icon-star text-warning"></span>
+                  <span className="icon-star text-warning"></span>
+                  <span className="icon-star text-warning"></span>
+                  <span className="icon-star text-warning"></span>
+                </div>
+                <h3 className="h5 text-primary mb-4">Mike Houston</h3>
+                <blockquote>
+                  <p>
+                    &ldquo;Far far away, behind the word mountains, far from the
+                    countries Vokalia and Consonantia, there live the blind
+                    texts. Separated they live in Bookmarksgrove right at the
+                    coast of the Semantics, a large language ocean.&rdquo;
+                  </p>
+                </blockquote>
+                <p className="text-black-50">Designer, Co-founder</p>
+              </div>
+            </div>
+
+            <div className="item">
+              <div className="testimonial">
+                <img
+                  src="assets/images/person_3-min.jpg"
+                  alt="Image"
+                  className="img-fluid rounded-circle w-25 mb-4"
+                />
+                <div className="rate">
+                  <span className="icon-star text-warning"></span>
+                  <span className="icon-star text-warning"></span>
+                  <span className="icon-star text-warning"></span>
+                  <span className="icon-star text-warning"></span>
+                  <span className="icon-star text-warning"></span>
+                </div>
+                <h3 className="h5 text-primary mb-4">Cameron Webster</h3>
+                <blockquote>
+                  <p>
+                    &ldquo;Far far away, behind the word mountains, far from the
+                    countries Vokalia and Consonantia, there live the blind
+                    texts. Separated they live in Bookmarksgrove right at the
+                    coast of the Semantics, a large language ocean.&rdquo;
+                  </p>
+                </blockquote>
+                <p className="text-black-50">Designer, Co-founder</p>
+              </div>
+            </div>
+
+            <div className="item">
+              <div className="testimonial">
+                <img
+                  src="assets/images/person_4-min.jpg"
+                  alt="Image"
+                  className="img-fluid rounded-circle w-25 mb-4"
+                />
+                <div className="rate">
+                  <span className="icon-star text-warning"></span>
+                  <span className="icon-star text-warning"></span>
+                  <span className="icon-star text-warning"></span>
+                  <span className="icon-star text-warning"></span>
+                  <span className="icon-star text-warning"></span>
+                </div>
+                <h3 className="h5 text-primary mb-4">Dave Smith</h3>
+                <blockquote>
+                  <p>
+                    &ldquo;Far far away, behind the word mountains, far from the
+                    countries Vokalia and Consonantia, there live the blind
+                    texts. Separated they live in Bookmarksgrove right at the
+                    coast of the Semantics, a large language ocean.&rdquo;
+                  </p>
+                </blockquote>
+                <p className="text-black-50">Designer, Co-founder</p>
+              </div>
+            </div>
+
+        </div>
+    </div>
+
     </AdminLayout>       
   )
 }
