@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 import AuthLayout from '../../layouts/AuthLayout';
-import { Link,useNavigate } from 'react-router-dom';
-import { register } from '../../Api/AllApi';
+import { clientregister } from '../../Api/AllApi';
 
 function Register() {
     const [inputs, setInputs] = useState([]);
@@ -20,13 +20,13 @@ function Register() {
 
     const handleSubmit = async(e) => {
         e.preventDefault();
-        await register(inputs);
-        navigate('/login')
+        await clientregister(inputs);
+        navigate('/Login')
     }
   return (
     <AuthLayout>
         <div className="text-center mb-5">
-            <img src="./assets/img/02 - PNG Property.png" height="80" width="100" className='mb-4'/>
+            <img src="assets/images/02 - PNG Property.png" height="80" width="100" className='mb-4'/>
             <h3>Sign Up</h3>
             <p>Please fill the form to Register.</p>
         </div>

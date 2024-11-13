@@ -1,7 +1,20 @@
 import React from 'react'
-import { Link,useLocation } from 'react-router-dom'
+import { logout } from '../../Api/AllApi';
+import { useLocation, Link } from 'react-router-dom';
+
 
 function Header() {
+
+  const location = useLocation();
+  const isLinkActive = (path) => {
+    return location.pathname === path ? 'active' : '';
+};
+
+  const handleLogout = async () => {
+    await logout();
+    // Redirect or show a logout confirmation if needed
+};
+
   return (
     <div className="main-header">
     <div className="site-mobile-menu site-navbar-target">
@@ -41,6 +54,24 @@ function Header() {
             <li><Link to="/Services">Services</Link></li>
             <li><a href="about.html">About</a></li>
             <li><a href="contact.html">Contact Us</a></li>
+            <li className="has-children">
+      
+            <Link to="">User account</Link>
+              <ul className="dropdown">
+                  <li className={`nav-item ${isLinkActive("/Login")}`}>
+                      <Link to="/Login">Login</Link>
+                  </li>
+                  <li className={`nav-item ${isLinkActive("/Register")}`}>
+                  <Link to="/Register">Register</Link>
+                  </li>
+                  {/* <li className={`nav-item ${isLinkActive("/")}`}>
+                      <Link to="/" className="dropdown-item">My Profile</Link>
+                  </li> */}
+                  <li className={`nav-item`}>
+                      <button onClick={handleLogout} className="dropdown-item">Logout</button>
+                  </li>
+              </ul>             
+            </li>
           </ul>
 
           <a

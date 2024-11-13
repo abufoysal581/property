@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import axios from '../../components/axios';
 import AdminLayout from '../../layouts/AdminLayout'
-import { Link, useNavigate , useParams, fetchProductDetails} from 'react-router-dom';
+import { Link, useNavigate , useParams, fetchPrDetails} from 'react-router-dom';
 
 function PropertyDetails() {
   const { property_id } = useParams(); // Get the product ID from the URL
@@ -16,7 +16,7 @@ function PropertyDetails() {
 
   const fetchPropertyDetails = async () => {
       try {
-          const response = await axios.get(`${process.env.REACT_APP_API_URL}/addproperty/${property_id}`);
+          const response = await axios.get(`${process.env.REACT_APP_API_URL}/property/${property_id}`);
           setProperty(response.data.data);
       } catch (err) {
           setError('Failed to fetch property details.');

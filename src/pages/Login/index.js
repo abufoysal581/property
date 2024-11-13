@@ -1,7 +1,7 @@
 import React,{useState,useEffect} from 'react';
 import AuthLayout from '../../layouts/AuthLayout';
 import { Link,useNavigate } from 'react-router-dom';
-import { login } from '../../Api/AllApi';
+import { clientlogin } from '../../Api/AllApi';
 function Login() {
     const navigate = useNavigate();
     const [inputs, setInputs ] = useState([]);
@@ -12,7 +12,7 @@ function Login() {
     }
     const handleSubmit = async (event) => {
         event.preventDefault();
-        let check = await login(inputs);
+        let check = await clientlogin(inputs);
         if(check){
             window.location=process.env.REACT_APP_BASE_URL
         }else{
@@ -22,7 +22,7 @@ function Login() {
   return (
     <AuthLayout>
         <div className="text-center mb-5">
-            <img src="./assets/img/02 - PNG Property.png" height="80" width="100" className='mb-4'/>
+            <img src="assets/images/02 - PNG Property.png" height="80" width="100" className='mb-4'/>
             <h3>Sign In</h3>
             <p>Please sign in to continue to Property</p>
         </div>

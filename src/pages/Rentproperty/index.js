@@ -76,22 +76,22 @@ const getDatas = async () => {
                                                             />
                                                         ))}
                                                     </a>
-                                                    <div className="product-action">
+                                                    <div className="property-action">
                                                         {/* <button type='button' className="btn btn-link" onClick={() => { addItem(d) }}><i className="fa fa-cart-plus"></i></button>
                                                         <button type='button' className="btn btn-link"><i className="fa fa-heart"></i></button>
                                                         <button type='button' className="btn btn-link"><i className="fa fa-search"></i></button> */}
                                                         {/* <button onClick={() => deleteData(d.id)}><i className="fa fa-trash"></i></button> */}
                                                     </div>
                                                 </div>
-                                                <div className="product-price">
+                                                <div className="property-price" style={{paddingTop:"20px"}}>
                                                     <h3><span>৳</span>{d.price || 99}</h3>
                                                 </div>
-                                                <div className="product-price">
+                                                <div className="property-price">
                                                     <h3><span></span>{d.property_title}</h3>
                                                 </div>
                                                 <div className="row">
                                                   <div className="col-md-6">
-                                                    <a to="#" className="btn btn-primary py-2 px-3"> See details </a>
+                                                  <Link to="/property/:property_id" className="btn btn-primary py-2 px-3" > See details</Link>
                                                   </div> 
                                                   <div className="col-md-6">
                                                     <Link to="/Buyform" className="btn btn-primary py-2 px-3" > Rent Property </Link>

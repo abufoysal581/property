@@ -1,8 +1,8 @@
 import * as React from 'react';
 
 
-// import Register from './pages/Register';
-// import Login from './pages/Login';
+import Register from './pages/Register';
+import Login from './pages/Login';
 import Dashboard from './pages/Dashboard';
 import Properties from './pages/properties';
 // import Requestproperty from './pages/Requestproperty';
@@ -24,8 +24,8 @@ function App() {
     <BrowserRouter>
       <Routes>
 
-           {/* <Route path="/register" element={<Register />} />
-          <Route path="/login" element={<Login />} /> */}
+           <Route path="/Register" element={<Register />} />
+          <Route path="/Login" element={<Login />} />
           <Route path="/" element={<Dashboard />} />
           <Route path="/properties" element={<Properties />} />
           {/* <Route path="/requestproperty" element={<Requestproperty />} /> */}
@@ -34,7 +34,7 @@ function App() {
           <Route path="/buyproperty" element={<Buyproperty />} />
           <Route path="/rentproperty" element={<Rentproperty />} />
           <Route path="/services" element={<Services />} />
-          <Route path="/propertydetails" element={<PropertyDetails />} />
+          <Route path="/property/:property_id" element={<PropertyDetails />} />
          
 
       </Routes>
