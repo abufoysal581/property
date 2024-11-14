@@ -35,7 +35,7 @@ function Register() {
                 <div className="col-md-12 col-12">
                     <div className="form-group">
                         <label htmlFor="first-name">Full Name</label>
-                        <input type="text" id="first-name" className="form-control" onChange={handleChange} name="name"/>
+                        <input type="text" id="first-name" className="form-control" onChange={handleChange} name="client_name"/>
                     </div>
                 </div>
                 <div className="col-md-12 col-12">

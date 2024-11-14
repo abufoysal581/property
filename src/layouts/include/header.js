@@ -1,9 +1,11 @@
 import React from 'react'
 import { logout } from '../../Api/AllApi';
-import { useLocation, Link } from 'react-router-dom';
+import { useLocation, Link,useNavigate } from 'react-router-dom';
 
 
 function Header() {
+  const userdata=JSON.parse(localStorage.getItem('front_userdata'));
+  const navigate=useNavigate();
 
   const location = useLocation();
   const isLinkActive = (path) => {
@@ -12,6 +14,7 @@ function Header() {
 
   const handleLogout = async () => {
     await logout();
+    navigate('/')
     // Redirect or show a logout confirmation if needed
 };
 
@@ -37,7 +40,7 @@ function Header() {
           >
             <li className=""><Link to="http://127.0.0.1:3001/">Home</Link></li>
             <li className="has-children">
-              <Link to="/properties">Properties</Link>
+              <Link to="#">Properties</Link>
               <ul className="dropdown">
                 <li><Link to="/Buyproperty">Buy Property</Link></li>
                 <li><Link to="/Rentproperty">Rent Property</Link></li>
@@ -58,18 +61,28 @@ function Header() {
       
             <Link to="">User account</Link>
               <ul className="dropdown">
-                  <li className={`nav-item ${isLinkActive("/Login")}`}>
-                      <Link to="/Login">Login</Link>
-                  </li>
-                  <li className={`nav-item ${isLinkActive("/Register")}`}>
-                  <Link to="/Register">Register</Link>
-                  </li>
-                  {/* <li className={`nav-item ${isLinkActive("/")}`}>
-                      <Link to="/" className="dropdown-item">My Profile</Link>
-                  </li> */}
-                  <li className={`nav-item`}>
-                      <button onClick={handleLogout} className="dropdown-item">Logout</button>
-                  </li>
+                  
+                  {userdata ? 
+                      <>
+                        <li className={`nav-item ${isLinkActive("/")}`}>
+                            <Link to="/" className="dropdown-item">My Profile</Link>
+                        </li>
+                        <li className={`nav-item`}>
+                          <button onClick={handleLogout} className="dropdown-item">Logout</button>
+                        </li>
+                      </>
+                      :
+                      <>
+                        <li className={`nav-item ${isLinkActive("/Login")}`}>
+                          <Link to="/Login">Login</Link>
+                        </li>
+                        <li className={`nav-item ${isLinkActive("/Register")}`}>
+                          <Link to="/Register">Register</Link>
+                        </li>
+                      </>
+                  }
+                  
+                  
               </ul>             
             </li>
           </ul>

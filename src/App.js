@@ -23,20 +23,17 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-
-           <Route path="/Register" element={<Register />} />
+          <Route path="/Register" element={<Register />} />
           <Route path="/Login" element={<Login />} />
           <Route path="/" element={<Dashboard />} />
           <Route path="/properties" element={<Properties />} />
           {/* <Route path="/requestproperty" element={<Requestproperty />} /> */}
-          <Route path="/buyform" element={<Buyform />} />
+          <Route path="/buyform/:property_id" element={<Buyform />} />
           <Route path="/rentform" element={<Rentform />} />
           <Route path="/buyproperty" element={<Buyproperty />} />
           <Route path="/rentproperty" element={<Rentproperty />} />
           <Route path="/services" element={<Services />} />
           <Route path="/property/:property_id" element={<PropertyDetails />} />
-         
-
       </Routes>
     </BrowserRouter>
   );

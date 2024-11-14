@@ -37,44 +37,61 @@ function PropertyDetails() {
 
   return (
       <AdminLayout>
-          <div className="property-detail">
-              <div className="container-fluid">
-                  <div className="row">
-                      {property && (
-                          <>
-                              {/* Product Images Section */}
-                              <div className="col-lg-6">
-                                  <div className="property-images">
-                                      {property?.image?.split(',').map((src, i) => (
-                                          <img
-                                              key={i}
-                                              src={`${process.env.REACT_APP_BACKEND_URL}/addproperty/${src}`}
-                                              alt={property.productname}
-                                              width="100%"
-                                              style={{ marginBottom: '10px' }}
-                                          />
-                                      ))}
-                                  </div>
-                              </div>
+        <div className="main" data-background-color="dark">
+            <div className="section">
+                <div className="container">
+                    <div className="row mb-5 align-items-center">
+                        <div className="col-lg-6 text-center mx-auto">
+                        <h2 className="font-weight-bold text-primary heading">
+                            Featured Properties
+                        </h2>
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="col-12">
+                            <div className="property-detail">
+                                <div className="container-fluid">
+                                    <div className="row">
+                                        {property && (
+                                            <>
+                                                {/* Product Images Section */}
+                                                <div className="col-lg-6">
+                                                    <div className="property-images">
+                                                        {property?.image?.split(',').map((src, i) => (
+                                                            <img
+                                                                key={i}
+                                                                src={`${process.env.REACT_APP_BACKEND_URL}/addproperty/${src}`}
+                                                                alt={property.productname}
+                                                                width="100%"
+                                                                style={{ marginBottom: '10px' }}
+                                                            />
+                                                        ))}
+                                                    </div>
+                                                </div>
 
-                              {/* Product Details Section */}
-                              <div className="col-lg-6">
-                                  <h2>{property.property_title}</h2>
-                                  <p>{property.description}</p>
-                                  <p><b>Price:</b> ৳{property.price || 99}</p>
+                                                {/* Product Details Section */}
+                                                <div className="col-lg-6">
+                                                    <h2>{property.property_title}</h2>
+                                                    <p>{property.description}</p>
+                                                    <p><b>Price:</b> ৳{property.price || 99}</p>
 
-                                 <br/>
+                                                    <br/>
 
-                                  {/* Add to Cart Button */}
-                                  {/* <button className="btn btn-primary" onClick={handleAddToCart}>
-                                      Add to Cart
-                                  </button> */}
-                              </div>
-                          </>
-                      )}
-                  </div>
-              </div>
-          </div>
+                                                    {/* Add to Cart Button */}
+                                                    {/* <button className="btn btn-primary" onClick={handleAddToCart}>
+                                                        Add to Cart
+                                                    </button> */}
+                                                </div>
+                                            </>
+                                        )}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
     </AdminLayout>       
