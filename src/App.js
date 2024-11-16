@@ -29,7 +29,7 @@ function App() {
           <Route path="/properties" element={<Properties />} />
           {/* <Route path="/requestproperty" element={<Requestproperty />} /> */}
           <Route path="/buyform/:property_id" element={<Buyform />} />
-          <Route path="/rentform" element={<Rentform />} />
+          <Route path="/rentform/:property_id" element={<Rentform />} />
           <Route path="/buyproperty" element={<Buyproperty />} />
           <Route path="/rentproperty" element={<Rentproperty />} />
           <Route path="/services" element={<Services />} />
