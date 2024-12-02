@@ -6,11 +6,11 @@ function Services() {
   return (
     <AdminLayout>
 
-<div>
+<div className="mt-5">
   <div className="section bg-light">
       <div className="container">
         <div className="row">
-          <div className="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+          <div className="col-6 col-lg-3"  data-aos-delay="300">
             <div className="box-feature mb-4">
               <span className="flaticon-house mb-4 d-block"></span>
               <h3 className="text-black mb-3 font-weight-bold">
@@ -23,7 +23,7 @@ function Services() {
               <p><a href="#" className="learn-more">Read more</a></p>
             </div>
           </div>
-          <div className="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+          <div className="col-6 col-lg-3"  data-aos-delay="400">
             <div className="box-feature mb-4">
               <span className="flaticon-house-2 mb-4 d-block-3"></span>
               <h3 className="text-black mb-3 font-weight-bold">Top Rated Agent</h3>
@@ -34,7 +34,7 @@ function Services() {
               <p><a href="#" className="learn-more">Read more</a></p>
             </div>
           </div>
-          <div className="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="500">
+          <div className="col-6 col-lg-3"  data-aos-delay="500">
             <div className="box-feature mb-4">
               <span className="flaticon-building mb-4 d-block"></span>
               <h3 className="text-black mb-3 font-weight-bold">
@@ -47,7 +47,7 @@ function Services() {
               <p><a href="#" className="learn-more">Read more</a></p>
             </div>
           </div>
-          <div className="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="600">
+          <div className="col-6 col-lg-3"  data-aos-delay="600">
             <div className="box-feature mb-4">
               <span className="flaticon-house-3 mb-4 d-block-1"></span>
               <h3 className="text-black mb-3 font-weight-bold">House for Sale</h3>
@@ -59,7 +59,7 @@ function Services() {
             </div>
           </div>
 
-          <div className="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+          <div className="col-6 col-lg-3"  data-aos-delay="300">
             <div className="box-feature mb-4">
               <span className="flaticon-house-4 mb-4 d-block"></span>
               <h3 className="text-black mb-3 font-weight-bold">
@@ -72,7 +72,7 @@ function Services() {
               <p><a href="#" className="learn-more">Read more</a></p>
             </div>
           </div>
-          <div className="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+          <div className="col-6 col-lg-3"  data-aos-delay="400">
             <div className="box-feature mb-4">
               <span className="flaticon-building mb-4 d-block-3"></span>
               <h3 className="text-black mb-3 font-weight-bold">Top Rated Agent</h3>
@@ -83,7 +83,7 @@ function Services() {
               <p><a href="#" className="learn-more">Read more</a></p>
             </div>
           </div>
-          <div className="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="500">
+          <div className="col-6 col-lg-3"  data-aos-delay="500">
             <div className="box-feature mb-4">
               <span className="flaticon-house mb-4 d-block"></span>
               <h3 className="text-black mb-3 font-weight-bold">
@@ -96,7 +96,7 @@ function Services() {
               <p><a href="#" className="learn-more">Read more</a></p>
             </div>
           </div>
-          <div className="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="600">
+          <div className="col-6 col-lg-3"  data-aos-delay="600">
             <div className="box-feature mb-4">
               <span className="flaticon-house-1 mb-4 d-block-1"></span>
               <h3 className="text-black mb-3 font-weight-bold">House for Sale</h3>
